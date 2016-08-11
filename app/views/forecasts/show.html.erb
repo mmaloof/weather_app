@@ -3,7 +3,7 @@
 <h1>The weather is <%= @current_weather.summary %> and <%= @current_weather.temperature %>°F</h1>
 
 <% @daily_weather.each do |day| %>
-  <%= day.summary %><br>
+    <%= day.summary %><br>
     <%= Time.at(day.time).strftime('%A') %> :
     High: <%= day.apparentTemperatureMax %> | Low: <%= day.apparentTemperatureMin %>
 <% end %>
