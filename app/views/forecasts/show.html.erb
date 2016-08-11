@@ -5,7 +5,7 @@
 <% @daily_weather.each do |day| %>
     <%= Time.at(day.time).strftime('%A') %> :
     High: <%= day.apparentTemperatureMax %> | Low: <%= day.apparentTemperatureMin %>
-    <%= day.summary %><br>
+    - <%= day.summary %><br>
 <% end %>
 
 <p>
